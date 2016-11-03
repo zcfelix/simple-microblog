@@ -1,8 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# zhouying:
-#   name: zhouying
-#   email: ybzhou@thoughtworks.com
-#   password: foobar
-#   password_confirmation: foobar
-
+zhouying:
+  name: zhouying
+  email: ybzhou@thoughtworks.com
+  password_digest: <%= User.digest('password') %>
